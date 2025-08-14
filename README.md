@@ -1,9 +1,11 @@
-### Ansible Collection - zchef2k.eda_oci_queue
+### EDA Ansible Collection - zchef2k.eda_oci_queue
 
 Event Driven Ansible event source plugin to read messages from Oracle OCI Queues- similar to `azure_service_bus` and `kafka`.
 
-Dependencies:
+Install:
+`ansible-galaxy collection install zchef2k.eda_oci_queue`
 
+Dependencies:
 * `pip install ansible-rulebook oci`
 *  valid `~/oci/config` file
 
@@ -15,7 +17,7 @@ Example rulebook:
   hosts: localhost
   sources:
     - name: oci_queue_listener
-      ansible.eda.oci_queue:
+      zchef2k.eda_oci_queue.oci_queue:
         queue_id: "ocid1.queue.oc1.iad...."
         compartment_id: "ocid1.compartment.oc1......"
         region: "us-<redacted>-1"
