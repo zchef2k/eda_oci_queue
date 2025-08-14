@@ -1,0 +1,10 @@
+namespace: zchef2k
+repository: zchef2k/eda_oci_queue
+name: eda_oci_queue
+version: 1.0.0
+readme: README.md
+authors:
+- zchef2k <zacdurham@gmail.com>
+description: EDA Event Source Plugin for reading messages from OCI Queues
+license:
+- GPL-2.0-or-later
